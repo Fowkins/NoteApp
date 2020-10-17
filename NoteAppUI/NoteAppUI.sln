@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteAppUI", "NoteAppUI\NoteAppUI.csproj", "{ED63D9AF-A7A2-4C5E-88BF-F85C7A0956A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteApp", "NoteApp\NoteApp.csproj", "{CB16DF0D-A5B2-4C2F-967C-6F4461757889}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteApp", "NoteApp\NoteApp.csproj", "{CB16DF0D-A5B2-4C2F-967C-6F4461757889}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Отчеты", "Отчеты", "{A661621A-A1A8-40F5-96C8-C4F831FA5053}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\..\Desktop\LABI\СПО\СПО1.docx = ..\..\..\..\..\Desktop\LABI\СПО\СПО1.docx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
