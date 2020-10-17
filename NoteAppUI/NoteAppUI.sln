@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteAppUI", "NoteAppUI\Note
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoteApp", "NoteApp\NoteApp.csproj", "{CB16DF0D-A5B2-4C2F-967C-6F4461757889}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Отчеты", "Отчеты", "{A661621A-A1A8-40F5-96C8-C4F831FA5053}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Отчеты", "Отчеты", "{3E31234A-FC7B-46E7-B288-D2972D764F69}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Desktop\LABI\СПО\СПО1.docx = ..\..\..\..\..\Desktop\LABI\СПО\СПО1.docx
+		Отчеты\СПО1.docx = Отчеты\СПО1.docx
 	EndProjectSection
 EndProject
 Global
