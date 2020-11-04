@@ -18,7 +18,13 @@ namespace NoteAppUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Project p=new Project();
+            Note[] note = new Note[5];
+            for (int i = 0; i < 5; i++)
+            {
+                note[i]=new Note("1"+i,Category.Work,"aaaa",DateTime.Today);
+                p._glossary.Add(note[i]);
+            }
         }
     }
 }
