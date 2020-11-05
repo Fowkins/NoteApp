@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Отчеты", "Отчеты", "{3E31234A-FC7B-46E7-B288-D2972D764F69}"
 	ProjectSection(SolutionItems) = preProject
 		Отчеты\СПО1.docx = Отчеты\СПО1.docx
+		Отчеты\СПО2.docx = Отчеты\СПО2.docx
 	EndProjectSection
 EndProject
 Global

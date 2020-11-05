@@ -7,7 +7,7 @@ namespace NoteApp
     /// </summary>
     public class Project 
     {
-        public List<Note> _glossary=new List<Note>();
+        public List<Note> Glossary=new List<Note>();
 
     }
 

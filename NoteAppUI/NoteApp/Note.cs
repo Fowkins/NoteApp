@@ -83,7 +83,7 @@ namespace NoteApp
         }
 
         /// <summary>
-        /// Созддание заметки
+        /// Создание заметки
         /// </summary>
         public Note(string name,Category category,string text, DateTime timecreation)
         {

@@ -23,16 +23,18 @@ namespace NoteAppUI
             _filePath = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             Project p=new Project();
             Note[] note = new Note[5];
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 2; i++)
             {
                 note[i]=new Note("1"+i,Category.Work,"aaaa",DateTime.Today);
-                p._glossary.Add(note[i]);
+                p.Glossary.Add(note[i]);
             }
             ProjectManager.SaveToFile(p, _filePath + @"\" + _fileName);
 
             p = null;
 
             p = ProjectManager.LoadFromFile(_filePath + @"\" + _fileName);
+
         }
+
     }
 }
