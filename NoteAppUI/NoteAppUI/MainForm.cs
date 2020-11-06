@@ -9,11 +9,11 @@ using NoteApp;
 
 namespace NoteAppUI
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
         public static string _filePath;
         public static string _fileName = "json.txt";
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
         }
