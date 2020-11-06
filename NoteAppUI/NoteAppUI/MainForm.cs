@@ -36,5 +36,9 @@ namespace NoteAppUI
 
         }
 
+        private void TitleListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
