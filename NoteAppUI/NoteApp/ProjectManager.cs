@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using Newtonsoft.Json;
 namespace NoteApp
 {
@@ -7,6 +8,7 @@ namespace NoteApp
     /// </summary>
     public class ProjectManager
     {
+        private static string _path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\NoteApp.notes";  //Закрытая константа, содержащая путь 
         public static void SaveToFile(Project data, string file)
         {
             JsonSerializer serializer = new JsonSerializer
@@ -22,6 +24,15 @@ namespace NoteApp
             }
         }
 
+        /// <summary>
+        /// Сохранения списка заметок в путь по умолчанию
+        /// </summary>
+        /// <param name="data">Список заметок</param>
+        public static void SaveToFile(Project data)
+        {
+            SaveToFile(data, _path);
+        }
+
         public static Project LoadFromFile(string file)
         {
             JsonSerializer serializer = new JsonSerializer
@@ -35,6 +46,15 @@ namespace NoteApp
             {
                 return (Project)serializer.Deserialize<Project>(reader);
             }
+        }
+
+        /// <summary>
+        /// Загрузка списка из файла в путь по умолчанию
+        /// </summary>
+        /// <returns>Возвращает список заметок</returns>
+        public static Project LoadFromFile()
+        {
+            return LoadFromFile(_path);
         }
 
     }

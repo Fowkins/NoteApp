@@ -82,6 +82,7 @@
             this.TitleTextBox.Name = "TitleTextBox";
             this.TitleTextBox.Size = new System.Drawing.Size(940, 22);
             this.TitleTextBox.TabIndex = 0;
+           
             // 
             // CategorysComboBox
             // 
@@ -93,6 +94,7 @@
             this.CategorysComboBox.Name = "CategorysComboBox";
             this.CategorysComboBox.Size = new System.Drawing.Size(160, 24);
             this.CategorysComboBox.TabIndex = 1;
+            
             // 
             // CreateDateTimePicker
             // 
@@ -134,6 +136,7 @@
             this.NoteTextBox.Name = "NoteTextBox";
             this.NoteTextBox.Size = new System.Drawing.Size(1033, 377);
             this.NoteTextBox.TabIndex = 4;
+            
             // 
             // OkButton
             // 
@@ -145,6 +148,7 @@
             this.OkButton.TabIndex = 5;
             this.OkButton.Text = "OK";
             this.OkButton.UseVisualStyleBackColor = true;
+            this.OkButton.Click += new System.EventHandler(this.OkButton_Click_1);
             // 
             // CancelButton
             // 
@@ -156,6 +160,7 @@
             this.CancelButton.TabIndex = 11;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click_1);
             // 
             // NoteForm
             // 
