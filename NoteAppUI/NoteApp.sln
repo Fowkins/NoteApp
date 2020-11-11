@@ -11,6 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Отчеты", "Отчет�
 	ProjectSection(SolutionItems) = preProject
 		Отчеты\СПО1.docx = Отчеты\СПО1.docx
 		Отчеты\СПО2.docx = Отчеты\СПО2.docx
+		Отчеты\СПО3.docx = Отчеты\СПО3.docx
 	EndProjectSection
 EndProject
 Global

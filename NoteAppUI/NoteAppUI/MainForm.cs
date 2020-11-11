@@ -23,7 +23,14 @@ namespace NoteAppUI
                 CategorysComboBox.Items.Add(element);
             }
 
-
+            try
+            {
+                allNotes = ProjectManager.LoadFromFile(); //загрузка списка заметок
+            }
+            catch (Exception e)
+            {
+                ProjectManager.SaveToFile(allNotes);
+            }
 
             CategorysComboBox.SelectedIndex = 0; //по умолчанию 1 категория 
 
@@ -63,7 +70,7 @@ namespace NoteAppUI
 
             sortNotes = allNotes.SortWithSelectionCategory(CategorysComboBox.SelectedIndex);
 
-            //если выбран заполняем данными правую часть окна
+            //заполняем данными правую часть окна
             TitleTextBox.Text = sortNotes[TitlesListBox.SelectedIndex].Name;
 
             CategoryTextBox.Text = "Category: " + sortNotes[TitlesListBox.SelectedIndex].Category;
@@ -127,7 +134,7 @@ namespace NoteAppUI
             NoteTextBox.Clear();
         }
 
-        //заполнет ListBox заголовками заметок
+        //заполнет TitleListBox заголовками заметок
         private void FillListbox()
         {
             //проверка на null(если заметок еще нет)
