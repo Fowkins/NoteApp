@@ -52,11 +52,19 @@
             this.NewButton = new System.Windows.Forms.Button();
             this.ChangeButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerNote)).BeginInit();
             this.splitContainerNote.Panel1.SuspendLayout();
             this.splitContainerNote.Panel2.SuspendLayout();
             this.splitContainerNote.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -83,7 +91,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
@@ -100,21 +108,21 @@
             // addNoteToolStripMenuItem
             // 
             this.addNoteToolStripMenuItem.Name = "addNoteToolStripMenuItem";
-            this.addNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
+            this.addNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.addNoteToolStripMenuItem.Text = "Add Note";
             this.addNoteToolStripMenuItem.Click += new System.EventHandler(this.addNoteToolStripMenuItem_Click_1);
             // 
             // editNoteToolStripMenuItem
             // 
             this.editNoteToolStripMenuItem.Name = "editNoteToolStripMenuItem";
-            this.editNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
+            this.editNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.editNoteToolStripMenuItem.Text = "Edit Note";
             this.editNoteToolStripMenuItem.Click += new System.EventHandler(this.editNoteToolStripMenuItem_Click_1);
             // 
             // removeNoteToolStripMenuItem
             // 
             this.removeNoteToolStripMenuItem.Name = "removeNoteToolStripMenuItem";
-            this.removeNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
+            this.removeNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.removeNoteToolStripMenuItem.Text = "Remove Note";
             this.removeNoteToolStripMenuItem.Click += new System.EventHandler(this.removeNoteToolStripMenuItem_Click_1);
             // 
@@ -129,7 +137,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click_1);
             // 
@@ -180,14 +188,16 @@
             // 
             // NoteTextBox
             // 
+            this.NoteTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.NoteTextBox.BackColor = System.Drawing.SystemColors.Control;
-            this.NoteTextBox.Enabled = false;
-            this.NoteTextBox.Location = new System.Drawing.Point(7, 109);
+            this.NoteTextBox.Location = new System.Drawing.Point(4, 7);
             this.NoteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NoteTextBox.Multiline = true;
             this.NoteTextBox.Name = "NoteTextBox";
             this.NoteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.NoteTextBox.Size = new System.Drawing.Size(755, 417);
+            this.NoteTextBox.Size = new System.Drawing.Size(738, 402);
             this.NoteTextBox.TabIndex = 6;
             // 
             // TitleTextBox
@@ -201,7 +211,7 @@
             this.TitleTextBox.Location = new System.Drawing.Point(4, 1);
             this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.Size = new System.Drawing.Size(763, 29);
+            this.TitleTextBox.Size = new System.Drawing.Size(752, 29);
             this.TitleTextBox.TabIndex = 2;
             // 
             // CategoryTextBox
@@ -216,10 +226,12 @@
             // 
             // CategorysComboBox
             // 
+            this.CategorysComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CategorysComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CategorysComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CategorysComboBox.FormattingEnabled = true;
-            this.CategorysComboBox.Location = new System.Drawing.Point(140, 18);
+            this.CategorysComboBox.Location = new System.Drawing.Point(108, 13);
             this.CategorysComboBox.Name = "CategorysComboBox";
             this.CategorysComboBox.Size = new System.Drawing.Size(156, 24);
             this.CategorysComboBox.TabIndex = 0;
@@ -230,7 +242,7 @@
             // 
             this.ShowCatgoryLabel.AutoSize = true;
             this.ShowCatgoryLabel.Enabled = false;
-            this.ShowCatgoryLabel.Location = new System.Drawing.Point(26, 25);
+            this.ShowCatgoryLabel.Location = new System.Drawing.Point(4, 16);
             this.ShowCatgoryLabel.Margin = new System.Windows.Forms.Padding(4);
             this.ShowCatgoryLabel.Name = "ShowCatgoryLabel";
             this.ShowCatgoryLabel.Size = new System.Drawing.Size(107, 17);
@@ -239,13 +251,16 @@
             // 
             // TitlesListBox
             // 
+            this.TitlesListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.TitlesListBox.FormattingEnabled = true;
             this.TitlesListBox.ItemHeight = 16;
-            this.TitlesListBox.Location = new System.Drawing.Point(22, 48);
+            this.TitlesListBox.Location = new System.Drawing.Point(4, 4);
             this.TitlesListBox.Margin = new System.Windows.Forms.Padding(4);
             this.TitlesListBox.Name = "TitlesListBox";
             this.TitlesListBox.ScrollAlwaysVisible = true;
-            this.TitlesListBox.Size = new System.Drawing.Size(284, 404);
+            this.TitlesListBox.Size = new System.Drawing.Size(276, 404);
             this.TitlesListBox.TabIndex = 1;
             this.TitlesListBox.SelectedIndexChanged += new System.EventHandler(this.TitlesListBox_SelectedIndexChanged_1);
             // 
@@ -254,38 +269,34 @@
             this.splitContainerNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainerNote.Location = new System.Drawing.Point(-9, 32);
+            this.splitContainerNote.Location = new System.Drawing.Point(0, 32);
             this.splitContainerNote.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainerNote.Name = "splitContainerNote";
             // 
             // splitContainerNote.Panel1
             // 
-            this.splitContainerNote.Panel1.Controls.Add(this.NewButton);
-            this.splitContainerNote.Panel1.Controls.Add(this.ChangeButton);
-            this.splitContainerNote.Panel1.Controls.Add(this.DeleteButton);
-            this.splitContainerNote.Panel1.Controls.Add(this.TitlesListBox);
-            this.splitContainerNote.Panel1.Controls.Add(this.ShowCatgoryLabel);
-            this.splitContainerNote.Panel1.Controls.Add(this.CategorysComboBox);
+            this.splitContainerNote.Panel1.Controls.Add(this.panel1);
             // 
             // splitContainerNote.Panel2
             // 
             this.splitContainerNote.Panel2.Controls.Add(this.CategoryTextBox);
             this.splitContainerNote.Panel2.Controls.Add(this.TitleTextBox);
-            this.splitContainerNote.Panel2.Controls.Add(this.NoteTextBox);
             this.splitContainerNote.Panel2.Controls.Add(this.CreateDateTimePicker);
             this.splitContainerNote.Panel2.Controls.Add(this.CreateTextLabel);
             this.splitContainerNote.Panel2.Controls.Add(this.ChangeDateTimePicker);
             this.splitContainerNote.Panel2.Controls.Add(this.ChangeTextLabel);
-            this.splitContainerNote.Size = new System.Drawing.Size(1115, 537);
-            this.splitContainerNote.SplitterDistance = 324;
+            this.splitContainerNote.Panel2.Controls.Add(this.panel3);
+            this.splitContainerNote.Size = new System.Drawing.Size(1099, 529);
+            this.splitContainerNote.SplitterDistance = 319;
             this.splitContainerNote.SplitterWidth = 5;
             this.splitContainerNote.TabIndex = 15;
             // 
             // NewButton
             // 
+            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NewButton.ForeColor = System.Drawing.SystemColors.ControlText;
             this.NewButton.Image = global::NoteAppUI.Properties.Resources.add__1_;
-            this.NewButton.Location = new System.Drawing.Point(22, 459);
+            this.NewButton.Location = new System.Drawing.Point(7, 469);
             this.NewButton.Margin = new System.Windows.Forms.Padding(4);
             this.NewButton.Name = "NewButton";
             this.NewButton.Size = new System.Drawing.Size(46, 43);
@@ -295,8 +306,9 @@
             // 
             // ChangeButton
             // 
+            this.ChangeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ChangeButton.Image = global::NoteAppUI.Properties.Resources.edit;
-            this.ChangeButton.Location = new System.Drawing.Point(76, 459);
+            this.ChangeButton.Location = new System.Drawing.Point(61, 469);
             this.ChangeButton.Margin = new System.Windows.Forms.Padding(4);
             this.ChangeButton.Name = "ChangeButton";
             this.ChangeButton.Size = new System.Drawing.Size(46, 43);
@@ -306,14 +318,64 @@
             // 
             // DeleteButton
             // 
+            this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.DeleteButton.Image = global::NoteAppUI.Properties.Resources.delete__1_;
-            this.DeleteButton.Location = new System.Drawing.Point(130, 459);
+            this.DeleteButton.Location = new System.Drawing.Point(115, 469);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(46, 43);
             this.DeleteButton.TabIndex = 12;
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click_1);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Controls.Add(this.DeleteButton);
+            this.panel1.Controls.Add(this.NewButton);
+            this.panel1.Controls.Add(this.ChangeButton);
+            this.panel1.Controls.Add(this.ShowCatgoryLabel);
+            this.panel1.Controls.Add(this.CategorysComboBox);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(324, 526);
+            this.panel1.TabIndex = 13;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.TitlesListBox);
+            this.panel2.Location = new System.Drawing.Point(12, 43);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(284, 419);
+            this.panel2.TabIndex = 14;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(772, 526);
+            this.panel3.TabIndex = 14;
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel4.Controls.Add(this.NoteTextBox);
+            this.panel4.Location = new System.Drawing.Point(5, 103);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(755, 420);
+            this.panel4.TabIndex = 0;
             // 
             // MainForm
             // 
@@ -330,11 +392,16 @@
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.splitContainerNote.Panel1.ResumeLayout(false);
-            this.splitContainerNote.Panel1.PerformLayout();
             this.splitContainerNote.Panel2.ResumeLayout(false);
             this.splitContainerNote.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerNote)).EndInit();
             this.splitContainerNote.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,6 +433,10 @@
         private System.Windows.Forms.Button NewButton;
         private System.Windows.Forms.Button ChangeButton;
         private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 

@@ -18,14 +18,14 @@ namespace NoteApp
         /// </summary>
         public string Name
         {
-            get {return _name;}
+            get => _name;
 
             set
             {
                 _name = value;
                 if (_name.Length > 50)
                 {
-                    throw new Exception("Длина названия не должна превышать 50 символов");
+                    throw new ArgumentException("Длина названия не должна превышать 50 символов");
                 }
 
                 if (_name.Length == 0)
@@ -40,12 +40,9 @@ namespace NoteApp
         /// </summary>
         public Category Category
         {
-            get { return _category;}
+            get => _category;
 
-            set
-            {
-                _category = value;
-            }
+            set => _category = value;
         }
 
         /// <summary>
@@ -53,12 +50,9 @@ namespace NoteApp
         /// </summary>
         public string Text
         {
-            get { return _text; }
+            get => _text;
 
-            set
-            {
-                _text = value;
-            }
+            set => _text = value;
         }
 
         /// <summary>
@@ -72,14 +66,9 @@ namespace NoteApp
         /// </summary>
         public DateTime TimeLastChange
         {
-            get { return _timelastchange; }
+            get => _timelastchange;
 
-            set
-            {
-                _timelastchange = value;
-
-            }
-
+            set => _timelastchange = value;
         }
 
         /// <summary>
