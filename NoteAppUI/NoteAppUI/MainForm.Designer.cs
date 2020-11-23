@@ -49,11 +49,11 @@
             this.ShowCatgoryLabel = new System.Windows.Forms.Label();
             this.TitlesListBox = new System.Windows.Forms.ListBox();
             this.splitContainerNote = new System.Windows.Forms.SplitContainer();
-            this.NewButton = new System.Windows.Forms.Button();
-            this.ChangeButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.DeleteButton = new System.Windows.Forms.Button();
+            this.NewButton = new System.Windows.Forms.Button();
+            this.ChangeButton = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
@@ -91,7 +91,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(116, 26);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click_1);
             // 
@@ -108,21 +108,21 @@
             // addNoteToolStripMenuItem
             // 
             this.addNoteToolStripMenuItem.Name = "addNoteToolStripMenuItem";
-            this.addNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
             this.addNoteToolStripMenuItem.Text = "Add Note";
             this.addNoteToolStripMenuItem.Click += new System.EventHandler(this.addNoteToolStripMenuItem_Click_1);
             // 
             // editNoteToolStripMenuItem
             // 
             this.editNoteToolStripMenuItem.Name = "editNoteToolStripMenuItem";
-            this.editNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.editNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
             this.editNoteToolStripMenuItem.Text = "Edit Note";
             this.editNoteToolStripMenuItem.Click += new System.EventHandler(this.editNoteToolStripMenuItem_Click_1);
             // 
             // removeNoteToolStripMenuItem
             // 
             this.removeNoteToolStripMenuItem.Name = "removeNoteToolStripMenuItem";
-            this.removeNoteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.removeNoteToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
             this.removeNoteToolStripMenuItem.Text = "Remove Note";
             this.removeNoteToolStripMenuItem.Click += new System.EventHandler(this.removeNoteToolStripMenuItem_Click_1);
             // 
@@ -137,7 +137,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(133, 26);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click_1);
             // 
@@ -197,7 +197,7 @@
             this.NoteTextBox.Multiline = true;
             this.NoteTextBox.Name = "NoteTextBox";
             this.NoteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.NoteTextBox.Size = new System.Drawing.Size(738, 402);
+            this.NoteTextBox.Size = new System.Drawing.Size(737, 402);
             this.NoteTextBox.TabIndex = 6;
             // 
             // TitleTextBox
@@ -211,7 +211,7 @@
             this.TitleTextBox.Location = new System.Drawing.Point(4, 1);
             this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.Size = new System.Drawing.Size(752, 29);
+            this.TitleTextBox.Size = new System.Drawing.Size(751, 29);
             this.TitleTextBox.TabIndex = 2;
             // 
             // CategoryTextBox
@@ -291,43 +291,6 @@
             this.splitContainerNote.SplitterWidth = 5;
             this.splitContainerNote.TabIndex = 15;
             // 
-            // NewButton
-            // 
-            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.NewButton.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.NewButton.Image = global::NoteAppUI.Properties.Resources.add__1_;
-            this.NewButton.Location = new System.Drawing.Point(7, 469);
-            this.NewButton.Margin = new System.Windows.Forms.Padding(4);
-            this.NewButton.Name = "NewButton";
-            this.NewButton.Size = new System.Drawing.Size(46, 43);
-            this.NewButton.TabIndex = 8;
-            this.NewButton.UseVisualStyleBackColor = true;
-            this.NewButton.Click += new System.EventHandler(this.NewButton_Click_1);
-            // 
-            // ChangeButton
-            // 
-            this.ChangeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.ChangeButton.Image = global::NoteAppUI.Properties.Resources.edit;
-            this.ChangeButton.Location = new System.Drawing.Point(61, 469);
-            this.ChangeButton.Margin = new System.Windows.Forms.Padding(4);
-            this.ChangeButton.Name = "ChangeButton";
-            this.ChangeButton.Size = new System.Drawing.Size(46, 43);
-            this.ChangeButton.TabIndex = 11;
-            this.ChangeButton.UseVisualStyleBackColor = true;
-            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click_1);
-            // 
-            // DeleteButton
-            // 
-            this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DeleteButton.Image = global::NoteAppUI.Properties.Resources.delete__1_;
-            this.DeleteButton.Location = new System.Drawing.Point(115, 469);
-            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(46, 43);
-            this.DeleteButton.TabIndex = 12;
-            this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click_1);
-            // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -355,6 +318,43 @@
             this.panel2.Size = new System.Drawing.Size(284, 419);
             this.panel2.TabIndex = 14;
             // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.DeleteButton.Image = global::NoteAppUI.Properties.Resources.delete__1_;
+            this.DeleteButton.Location = new System.Drawing.Point(115, 469);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(46, 43);
+            this.DeleteButton.TabIndex = 12;
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click_1);
+            // 
+            // NewButton
+            // 
+            this.NewButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.NewButton.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.NewButton.Image = global::NoteAppUI.Properties.Resources.add__1_;
+            this.NewButton.Location = new System.Drawing.Point(7, 469);
+            this.NewButton.Margin = new System.Windows.Forms.Padding(4);
+            this.NewButton.Name = "NewButton";
+            this.NewButton.Size = new System.Drawing.Size(46, 43);
+            this.NewButton.TabIndex = 8;
+            this.NewButton.UseVisualStyleBackColor = true;
+            this.NewButton.Click += new System.EventHandler(this.NewButton_Click_1);
+            // 
+            // ChangeButton
+            // 
+            this.ChangeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.ChangeButton.Image = global::NoteAppUI.Properties.Resources.edit;
+            this.ChangeButton.Location = new System.Drawing.Point(61, 469);
+            this.ChangeButton.Margin = new System.Windows.Forms.Padding(4);
+            this.ChangeButton.Name = "ChangeButton";
+            this.ChangeButton.Size = new System.Drawing.Size(46, 43);
+            this.ChangeButton.TabIndex = 11;
+            this.ChangeButton.UseVisualStyleBackColor = true;
+            this.ChangeButton.Click += new System.EventHandler(this.ChangeButton_Click_1);
+            // 
             // panel3
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -363,7 +363,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(772, 526);
+            this.panel3.Size = new System.Drawing.Size(771, 526);
             this.panel3.TabIndex = 14;
             // 
             // panel4
@@ -374,7 +374,7 @@
             this.panel4.Controls.Add(this.NoteTextBox);
             this.panel4.Location = new System.Drawing.Point(5, 103);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(755, 420);
+            this.panel4.Size = new System.Drawing.Size(754, 420);
             this.panel4.TabIndex = 0;
             // 
             // MainForm
@@ -387,6 +387,7 @@
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(834, 480);
             this.Name = "MainForm";
             this.Text = "NoteApp";
             this.menuStrip1.ResumeLayout(false);

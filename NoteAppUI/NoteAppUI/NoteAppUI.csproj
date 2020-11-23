@@ -115,4 +115,12 @@
     <None Include="Resources\delete %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>rd /s $(SolutionDir)InstallScript\Release
+md $(SolutionDir)InstallScript\Release
+xcopy $(ProjectDir)$(OutDir)*.dll $(SolutionDir)InstallScript\Release
+xcopy $(ProjectDir)$(OutDir)*.exe $(SolutionDir)InstallScript\Release
+"C:\Program Files (x86)\Inno Setup 6\ISCC.exe" $(SolutionDir)InstallScript\Installers\installer.iss
+</PostBuildEvent>
+  </PropertyGroup>
 </Project>

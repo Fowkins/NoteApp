@@ -8,7 +8,7 @@ namespace NoteApp
     /// </summary>
     public class ProjectManager
     {
-        private static string _path = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\NoteApp.notes";  //Закрытая константа, содержащая путь 
+        private static string _path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\NoteApp.notes";  //Закрытая константа, содержащая путь 
         public static void SaveToFile(Project data, string file)
         {
             JsonSerializer serializer = new JsonSerializer
