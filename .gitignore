@@ -31,7 +31,8 @@ bld/
 [Ll]og/
 [Ll]ogs/
 [Ii]nstallScript/
-
+Installers/
+*.iss
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -94,7 +95,6 @@ StyleCopReport.xml
 *.pidb
 *.svclog
 *.scc
-*.iss
 
 # Chutzpah Test files
 _Chutzpah*
@@ -351,3 +351,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+
