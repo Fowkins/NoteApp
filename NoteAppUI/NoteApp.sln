@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Отчеты", "Отчет�
 		Отчеты\СПО1.docx = Отчеты\СПО1.docx
 		Отчеты\СПО2.docx = Отчеты\СПО2.docx
 		Отчеты\СПО3.docx = Отчеты\СПО3.docx
+		Отчеты\СПО4.docx = Отчеты\СПО4.docx
+		Отчеты\СПО5.docx = Отчеты\СПО5.docx
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteApp.UnitTests", "NoteApp.UnitTests\NoteApp.UnitTests.csproj", "{CBF37BB8-20A5-4720-A3B7-5CB2331F8414}"

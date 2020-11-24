@@ -197,7 +197,7 @@
             this.NoteTextBox.Multiline = true;
             this.NoteTextBox.Name = "NoteTextBox";
             this.NoteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.NoteTextBox.Size = new System.Drawing.Size(737, 402);
+            this.NoteTextBox.Size = new System.Drawing.Size(736, 402);
             this.NoteTextBox.TabIndex = 6;
             // 
             // TitleTextBox
@@ -211,7 +211,7 @@
             this.TitleTextBox.Location = new System.Drawing.Point(4, 1);
             this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.Size = new System.Drawing.Size(751, 29);
+            this.TitleTextBox.Size = new System.Drawing.Size(750, 29);
             this.TitleTextBox.TabIndex = 2;
             // 
             // CategoryTextBox
@@ -363,7 +363,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(771, 526);
+            this.panel3.Size = new System.Drawing.Size(770, 526);
             this.panel3.TabIndex = 14;
             // 
             // panel4
@@ -374,7 +374,7 @@
             this.panel4.Controls.Add(this.NoteTextBox);
             this.panel4.Location = new System.Drawing.Point(5, 103);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(754, 420);
+            this.panel4.Size = new System.Drawing.Size(753, 420);
             this.panel4.TabIndex = 0;
             // 
             // MainForm
