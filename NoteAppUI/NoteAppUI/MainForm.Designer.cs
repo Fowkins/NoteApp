@@ -196,8 +196,9 @@
             this.NoteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.NoteTextBox.Multiline = true;
             this.NoteTextBox.Name = "NoteTextBox";
+            this.NoteTextBox.ReadOnly = true;
             this.NoteTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.NoteTextBox.Size = new System.Drawing.Size(736, 402);
+            this.NoteTextBox.Size = new System.Drawing.Size(735, 402);
             this.NoteTextBox.TabIndex = 6;
             // 
             // TitleTextBox
@@ -211,7 +212,8 @@
             this.TitleTextBox.Location = new System.Drawing.Point(4, 1);
             this.TitleTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TitleTextBox.Name = "TitleTextBox";
-            this.TitleTextBox.Size = new System.Drawing.Size(750, 29);
+            this.TitleTextBox.ReadOnly = true;
+            this.TitleTextBox.Size = new System.Drawing.Size(749, 29);
             this.TitleTextBox.TabIndex = 2;
             // 
             // CategoryTextBox
@@ -221,6 +223,7 @@
             this.CategoryTextBox.Location = new System.Drawing.Point(7, 42);
             this.CategoryTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CategoryTextBox.Name = "CategoryTextBox";
+            this.CategoryTextBox.ReadOnly = true;
             this.CategoryTextBox.Size = new System.Drawing.Size(253, 15);
             this.CategoryTextBox.TabIndex = 3;
             // 
@@ -363,7 +366,7 @@
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(3, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(770, 526);
+            this.panel3.Size = new System.Drawing.Size(769, 526);
             this.panel3.TabIndex = 14;
             // 
             // panel4
@@ -374,7 +377,7 @@
             this.panel4.Controls.Add(this.NoteTextBox);
             this.panel4.Location = new System.Drawing.Point(5, 103);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(753, 420);
+            this.panel4.Size = new System.Drawing.Size(752, 420);
             this.panel4.TabIndex = 0;
             // 
             // MainForm

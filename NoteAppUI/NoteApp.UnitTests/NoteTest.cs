@@ -29,7 +29,8 @@ namespace NoteApp.UnitTests
             Assert.AreEqual(expected, actual, message);
         }
 
-        [Test(Description = "Негативный тест set, если поле Name больше 50 символов")]
+      
+  [Test(Description = "Негативный тест set, если поле Name больше 50 символов")]
         public void TestNameSet_Longer50Symbols()
         {
             var wrongTitle = "ЗаголовокЗаголовокЗаголовокЗаголовокЗаголовокЗаголовокЗаголовок";
@@ -38,7 +39,6 @@ namespace NoteApp.UnitTests
                 () => { _note.Name = wrongTitle; },
                 "Должно возникнуть исключение, если длина Name больше 50 символов");
         }
-
         [Test(Description = "Тест значения поля Name по умолчанию")]
         public void TestNameSet_CorrectValue()
         {
